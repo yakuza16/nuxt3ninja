@@ -10,6 +10,8 @@
 
 <script setup>
 const { id } = useRoute().params;
+
+definePageMeta({ layout: "products-layout" });
 </script>
 
 <style scoped></style>

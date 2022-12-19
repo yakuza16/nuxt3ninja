@@ -11,6 +11,8 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+definePageMeta({ layout: "products-layout" });
+</script>
 
 <style scoped></style>
