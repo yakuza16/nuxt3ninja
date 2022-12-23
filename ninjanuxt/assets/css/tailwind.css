@@ -10,4 +10,7 @@ body {
   .btn {
     @apply px-2 py-2 rounded-md text-sm text-white bg-[#12b488];
   }
+  .card {
+    @apply p-3 rounded-md bg-white shadow-md h-full;
+  }
 }
