@@ -8,9 +8,19 @@
       eaque culpa expedita? Veniam, a. Voluptas illo officiis ab tenetur velit
       at aperiam voluptatibus beatae unde, libero placeat repellat quasi a!
     </p>
+    <div class="bg-red-50">{{ data }}</div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const { data } = await useFetch(
+  "/api/ninja"
+  //   {
+  //   method: "post",
+  //   body: { age: 30 },
+  // }
+);
+console.log(data);
+</script>
 
 <style scoped></style>
