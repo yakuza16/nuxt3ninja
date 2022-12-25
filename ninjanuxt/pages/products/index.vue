@@ -15,6 +15,11 @@ definePageMeta({ layout: "products-layout" });
 // fetch products
 const { data: products } = await useFetch("https://fakestoreapi.com/products");
 // console.log(products.value);
+
+useHead({
+  title: "Nuxt Dojo | Merch",
+  meta: [{ name: "description", content: "Nuxt 3 Merchendise" }],
+});
 </script>
 
 <style scoped></style>
