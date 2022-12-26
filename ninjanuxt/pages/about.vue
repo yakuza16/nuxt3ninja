@@ -14,7 +14,7 @@
 
 <script setup>
 const { data } = await useFetch(
-  "/api/ninja"
+  "/api/currency/GBP"
   //   {
   //   method: "post",
   //   body: { age: 30 },
