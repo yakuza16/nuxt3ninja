@@ -1,6 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default defineNuxtConfig({
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/prismic", "@nuxtjs/strapi"],
+  strapi: {
+    url: process.env.STRAPI_URL || "http://localhost:1337",
+    prefix: "/api",
+    version: "v4",
+    cookie: {},
+    cookieName: "strapi_jwt",
+  },
+  prismic: { endpoint: "https://olejekcbd.prismic.io/api/v2" },
   app: {
     head: {
       title: "Nuxt Dojo",
