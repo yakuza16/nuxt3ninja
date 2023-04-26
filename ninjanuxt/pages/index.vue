@@ -20,20 +20,28 @@
 <script setup>
 // tutaj odnosnie STRAPI
 // const route = useRoute();
-// const { find } = useStrapi();
-// const { findOne } = useStrapi();
+const { find } = useStrapi()
+const { findOne } = useStrapi()
 
 // const response = await findOne("opis");
 
 // console.log(response);
 
-// const response = await find("restaurants");
+// filtrowanie
+// const response = await find("categories", {
+//   filters: { voivodeship: "łódzkie" },
+// })
 
-// console.log(response.data);
+// populate categories
+// const response = await find("categories", { populate: "restaurants" })
 
-// const response = await find("restaurants");
+// console.log(response.data)
 
-// console.log(response);
+// const response = await findOne("categories", 2, {
+//   fields: ["createdAt", "name"],
+// })
+
+console.log(response.data)
 
 // dotąd jest strapi
 

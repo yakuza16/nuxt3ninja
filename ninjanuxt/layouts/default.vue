@@ -13,6 +13,9 @@
           <li>
             <NuxtLink to="/products" class="btn">Products</NuxtLink>
           </li>
+          <li>
+            <NuxtLink to="/blog" class="btn">Blog</NuxtLink>
+          </li>
         </ul>
       </nav>
     </header>
